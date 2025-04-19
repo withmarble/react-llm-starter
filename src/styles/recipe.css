@@ -1,0 +1,187 @@
+.recipe-container {
+  min-height: 100vh;
+  background: #fff8e1;
+  padding: 32px 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.tj-header {
+  background: #e95c2a;
+  border-radius: 28px;
+  padding: 24px 16px 16px 16px;
+  margin: 0 auto 32px auto;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+.tj-header-icon {
+  font-size: 2.5rem;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+.tj-header-icon-right {
+  left: unset;
+  right: 18px;
+  top: 18px;
+}
+.tj-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  letter-spacing: 1px;
+  line-height: 1.1;
+  color: #fffbe7;
+  text-shadow: 1px 2px 0 #b13d1b;
+}
+.tj-font {
+  font-family: 'TraderJoes', 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+.tj-subtitle {
+  color: #ffe066;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.tj-controls-card {
+  background: #fff3c1;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 28px 24px 24px 24px;
+  max-width: 420px;
+  margin: 0 auto 32px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+}
+.tj-slider-group {
+  margin-bottom: 8px;
+}
+.tj-slider-label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b13d1b;
+  margin-bottom: 6px;
+  display: block;
+}
+.tj-slider-value {
+  color: #e95c2a;
+  font-weight: bold;
+}
+.tj-slider {
+  width: 100%;
+  height: 12px;
+  background: #ffb84d;
+  border-radius: 8px;
+  outline: none;
+  accent-color: #e95c2a;
+  margin: 0 0 4px 0;
+}
+.tj-slider-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #b13d1b;
+  margin-top: 2px;
+}
+.tj-generate-btn {
+  background: linear-gradient(90deg, #ffb84d 0%, #e95c2a 100%);
+  color: #fffbe7;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 0;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(233,92,42,0.10);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.tj-generate-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #e95c2a 0%, #ffb84d 100%);
+  box-shadow: 0 4px 16px rgba(233,92,42,0.18);
+}
+.tj-generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tj-recipe-list {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.tj-recipe-card {
+  background: #fffbe7;
+  border: 3px solid #ffb84d;
+  border-radius: 22px;
+  padding: 24px 20px 18px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.tj-recipe-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.tj-wrap-icon {
+  font-size: 2.1rem;
+}
+.tj-recipe-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e95c2a;
+  margin: 0;
+}
+.tj-recipe-section {
+  margin-bottom: 12px;
+}
+.tj-section-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b13d1b;
+  margin-bottom: 4px;
+}
+.tj-ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tj-ingredient-item {
+  color: #3d3d3d;
+  font-size: 1rem;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tj-steps-list {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0;
+}
+.tj-step-item {
+  color: #3d3d3d;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+.tj-recipe-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #b13d1b;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+@font-face {
+  font-family: 'TraderJoes';
+  src: url('/TraderJoes.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
